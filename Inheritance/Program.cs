@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace Inheritance
 {
@@ -28,12 +29,16 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird penguin = new Bird("Penguin", 4, 5, true, false, "medium", true, "questionable");
+            penguin.BirdStats();
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
+             *
+             * Creatively display the class member values
              */
+            Reptile tortoise = new Reptile("Tortoise", 4, 40, true, "Will Drown", true, "undoubtedly", true);
+            
         }
     }
 }
